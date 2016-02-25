@@ -1,0 +1,22 @@
+# act like vim
+setw -g mode-keys vi
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind-key -r C-h select-window -t :-
+bind-key -r C-l select-window -t :+
+unbind [
+bind ` copy-mode
+unbind p
+bind p paste-buffer
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-selection
+
+# after copying to a tmux buffer, hit y again to copy to clipboard
+bind y run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+
+# Open new panels and windows in the current directory
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
