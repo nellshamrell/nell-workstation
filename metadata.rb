@@ -1,0 +1,7 @@
+name 'nell-workstation'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures nell-workstation'
+long_description 'Installs/Configures nell-workstation'
+version '0.1.0'
