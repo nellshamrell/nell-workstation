@@ -1,0 +1,32 @@
+[alias]
+  aa = add
+  b = branch
+  ba = branch -a
+  ci = commit
+  co = checkout
+  d = diff
+  dc = diff --cached
+  fp = format-patch
+  g = !git gui &
+  gr = log --graph
+  go = log --graph --pretty=oneline --abbrev-commit
+  k = !gitk &
+  ka = !gitk --all &
+  lc = log ORIG_HEAD.. --stat --no-merges
+  lp = log --patch-with-stat
+  mnf = merge --no-ff
+  mnff = merge --no-ff
+  mt = mergetool
+  p = format-patch -1
+  serve = !git daemon --reuseaddr --verbose --base-path=. --export-all ./.git
+  sra = svn rebase --all
+  sh = !git-sh
+  st = status
+  stm = status --untracked=no
+  stfu = status --untracked=no
+  pullsrb = !git stash save && git pull --rebase && git stash pop && echo 'Success!'
+[user]
+  name = Nell Shamrell
+  email = nellshamrell@gmail.com
+[core]
+  editor = /usr/bin/vim

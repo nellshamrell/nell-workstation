@@ -15,3 +15,25 @@ package 'tmux'
 template '.tmux.conf' do
   source 'tmux.erb'
 end
+
+template '.bash_profile' do
+  source 'bash_profile.erb'
+end
+
+template '.bashrc' do
+  source 'bashrc.erb'
+end
+
+package 'git'
+
+template '.git-completion.bash' do
+  source 'git-completion.erb'
+end
+
+template '.git-prompt.sh' do
+  source 'git-prompt.erb'
+end
+
+template '.gitconfig' do
+  source 'gitconfig.erb'
+end
