@@ -10,6 +10,10 @@ Anytime I've had horrible wifi (i.e. in a coffee shop or, worse, in a plane) get
 
 I've found it's far more effective to set up a VM as my workstation with a cloud provider (this can be AWS, Digital Ocean, whatever your prefer).  I created this to automate the vim, tmux, and chef dk setup for a workstation VM.
 
+## What does this do?
+
+The main things this cookbook does is install and/or configure vim, tmux, git, bash, and chef dk
+
 ## How do you use it?
 
 First, create a VM with a cloud provider, then SSH into that VM.
