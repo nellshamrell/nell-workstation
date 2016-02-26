@@ -37,3 +37,7 @@ end
 template '.gitconfig' do
   source 'gitconfig.erb'
 end
+
+execute 'chefdk' do
+  command 'curl -L https://www.getchef.com/chef/install.sh | sudo bash -s -- -P chefdk'
+end
