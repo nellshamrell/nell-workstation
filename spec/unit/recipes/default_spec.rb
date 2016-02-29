@@ -65,6 +65,12 @@ describe 'nell-workstation::default' do
       end
     end
 
+    describe 'installing unzip' do
+      it 'installs unzip' do
+        expect(chef_run).to install_package('unzip')
+      end
+    end
+
     describe 'installing chef-dk' do
       it 'installs chef dk' do
         expect(chef_run).to run_execute('curl -L https://www.getchef.com/chef/install.sh | sudo bash -s -- -P chefdk')

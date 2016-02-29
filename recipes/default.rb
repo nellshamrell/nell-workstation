@@ -38,6 +38,10 @@ template '.gitconfig' do
   source 'gitconfig.erb'
 end
 
+package 'unzip'
+
 execute 'chefdk' do
   command 'curl -L https://www.getchef.com/chef/install.sh | sudo bash -s -- -P chefdk'
 end
+
+include_recipe 'nell-workstation::terraform'
