@@ -33,7 +33,7 @@ Now, make a cookbooks directory on the VM
 Pull down this cookbook from Github (doing this rather than git clone since git is not yet installed
 
 ```bash
-  $ wget -O nell-worktation.tar.gz https://github.com/nellshamrell/nell-workstation/tarball/master
+  $ wget -O nell-workstation.tar.gz https://github.com/nellshamrell/nell-workstation/tarball/master
 ```
 
 Now extract it to the cookbooks directory
