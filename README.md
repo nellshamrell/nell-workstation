@@ -8,11 +8,11 @@ This is a Chef cookbook which sets up a basic workstation for me on a VM.
 
 Anytime I've had horrible wifi (i.e. in a coffee shop or, worse, in a plane) getting development work done has crawled to a halt.
 
-I've found it's far more effective to set up a VM as my workstation with a cloud provider (this can be AWS, Digital Ocean, whatever your prefer).  I created this to automate the vim, tmux, and chef dk setup for a workstation VM.
+I've found it's far more effective to set up a VM as my workstation with a cloud provider (this can be AWS, Digital Ocean, whatever your prefer).  I created this to automate the vim, tmux, terraform, and chef dk setup for a workstation VM.
 
 ## What does this do?
 
-The main things this cookbook does is install and/or configure vim, tmux, git, bash, and chef dk
+The main things this cookbook does is install and/or configure vim, tmux, git, bash, terraform, and chef dk
 
 ## How do you use it?
 
