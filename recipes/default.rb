@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-execute "run apt-get update for supermarket updates" do
+execute "run apt-get update" do
   command "apt-get update"
 end
 
