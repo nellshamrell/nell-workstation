@@ -4,6 +4,10 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+execute "run apt-get update for supermarket updates" do
+  command "apt-get update"
+end
+
 package 'vim'
 
 template '.vimrc' do
@@ -41,7 +45,7 @@ end
 package 'unzip'
 
 execute 'chefdk' do
-  command 'curl -L https://www.getchef.com/chef/install.sh | sudo bash -s -- -P chefdk'
+  command 'wget https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.12.0-1_amd64.deb'
 end
 
 include_recipe 'nell-workstation::terraform'
