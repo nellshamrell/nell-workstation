@@ -39,7 +39,7 @@ Pull down this cookbook from Github (doing this rather than git clone since git 
 Now extract it to the cookbooks directory
 
 ```bash
-  $ mkdir /var/chef/cookbooks/nell-workstation && tar -xzf nell-workstation.tar.gz -C /var/chef/cookbooks/nell-workstation --strip-components 1
+  $ mkdir /var/chef/cookbooks/nell-workstation && sudo tar -xzf nell-workstation.tar.gz -C /var/chef/cookbooks/nell-workstation --strip-components 1
 ```
 
 Now run chef solo with the cookbook you just downloaded
