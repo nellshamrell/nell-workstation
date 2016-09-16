@@ -10,10 +10,14 @@ end
 
 package 'vim'
 
-template '.vimrc' do
+user = node['user']
+home = Dir.home(user)
+
+template "#{home}/.vimrc" do
   source 'vimrc.erb'
 end
 
+=begin
 package 'tmux'
 
 template '.tmux.conf' do
@@ -49,3 +53,4 @@ execute 'chefdk' do
 end
 
 include_recipe 'nell-workstation::terraform'
+=end

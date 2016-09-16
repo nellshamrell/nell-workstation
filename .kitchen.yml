@@ -7,10 +7,12 @@ provisioner:
 
 platforms:
   - name: ubuntu-12.04
-  - name: centos-6.5
+
+verifier:
+  name: inspec
 
 suites:
   - name: default
     run_list:
       - recipe[nell-workstation::default]
-    attributes:
+    attributes: { user: 'vagrant' }
