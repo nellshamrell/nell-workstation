@@ -27,30 +27,32 @@ template "#{home}/.bash_profile" do
   source 'bash_profile.erb'
 end
 
-=begin
-template '.bashrc' do
+template "#{home}/.bashrc" do
   source 'bashrc.erb'
 end
 
 package 'git'
 
-template '.git-completion.bash' do
+template "#{home}/.git-completion.bash" do
   source 'git-completion.erb'
 end
 
-template '.git-prompt.sh' do
+template "#{home}/.git-prompt.sh" do
   source 'git-prompt.erb'
 end
 
-template '.gitconfig' do
+template "#{home}/.gitconfig" do
   source 'gitconfig.erb'
 end
 
 package 'unzip'
 
-execute 'chefdk' do
-  command 'wget https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.12.0-1_amd64.deb'
+execute 'download chefdk' do
+  command 'wget https://packages.chef.io/stable/ubuntu/12.04/chefdk_0.17.17-1_amd64.deb'
+end
+
+execute 'install chefdk' do
+  command 'dpkg -i chefdk_0.17.17-1_amd64.deb'
 end
 
 include_recipe 'nell-workstation::terraform'
-=end
