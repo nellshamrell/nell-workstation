@@ -16,4 +16,5 @@ suites:
     run_list:
       - recipe[nell-workstation::default]
       - recipe[nell-workstation::terraform]
+      - recipe[nell-workstation::habitat]
     attributes: { user: 'vagrant' }

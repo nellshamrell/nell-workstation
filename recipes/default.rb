@@ -56,3 +56,4 @@ execute 'install chefdk' do
 end
 
 include_recipe 'nell-workstation::terraform'
+include_recipe 'nell-workstation::habitat'
