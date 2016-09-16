@@ -17,12 +17,12 @@ template "#{home}/.vimrc" do
   source 'vimrc.erb'
 end
 
-=begin
 package 'tmux'
 
-template '.tmux.conf' do
+template "#{home}/.tmux.conf" do
   source 'tmux.erb'
 end
+=begin
 
 template '.bash_profile' do
   source 'bash_profile.erb'
