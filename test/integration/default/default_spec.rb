@@ -18,3 +18,8 @@ describe file('.tmux.conf') do
   its('content') { should match /act like vim/ }
 end
 
+describe file('.bash_profile') do
+  it { should be_file }
+  its('content') { should match /Load in the git branch prompt/ }
+end
+

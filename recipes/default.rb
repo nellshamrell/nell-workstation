@@ -22,12 +22,12 @@ package 'tmux'
 template "#{home}/.tmux.conf" do
   source 'tmux.erb'
 end
-=begin
 
-template '.bash_profile' do
+template "#{home}/.bash_profile" do
   source 'bash_profile.erb'
 end
 
+=begin
 template '.bashrc' do
   source 'bashrc.erb'
 end
