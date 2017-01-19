@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: "/Users/nshamrell/Projects/nell-workstation/.kitchen/kitchen-vagrant/kitchen-nell-workstation-default-ubuntu-1604/.vagrant/machines/default/virtualbox/private_key"
+last_action: verify
