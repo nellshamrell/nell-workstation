@@ -57,3 +57,4 @@ end
 
 include_recipe 'nell-workstation::terraform'
 include_recipe 'nell-workstation::habitat'
+include_recipe 'nell-workstation::docker'
